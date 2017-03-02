@@ -25,5 +25,8 @@
     "mongojs": "^2.4.0",
     "mongoose": "^4.8.5",
     "request": "^2.79.0"
+  },
+  "engines": {
+    "node": "6.9.2"
   }
 }
