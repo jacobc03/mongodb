@@ -26,9 +26,9 @@ app.use(bodyParser.urlencoded({
 // Make public a static dir
 app.use(express.static("public"));
 
-//mongolab-elliptical-32558
-//mongodb://heroku_mczb6qd7:li0pe0aqhq7phuagcrdva54vtu@ds113650.mlab.com:13650/heroku_mczb6qd7
-mongoose.connect("mongodb://localhost/scraper");
+
+
+mongoose.connect("mongodb://heroku_mczb6qd7:li0pe0aqhq7phuagcrdva54vtu@ds113650.mlab.com:13650/heroku_mczb6qd7");
 var db = mongoose.connection;
 
 // Show any mongoose errors
