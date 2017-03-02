@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scraping With Mongoose</title>
+    <style>
+      body { background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7s7gLFinzXRSK6f6TIPcah-2IuzBikkUINH2SPT80DEOvzL3dxw") }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+        font-size: 20px;
+        font-weight: 100px;
+
+      }
+      #notes {
+        float: right;
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #ffffff;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+      h1{
+        text-align: center;
+        font-size: 40px;
+      }
+      h2{
+        text-align: center;
+        font-size: 30px;
+      }
+      #headline{
+        font-size: 25px;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Wall Street Journal Scraper</h1>
+      <h2><i>This site will scrape all the headlines and each associated link from the home page.</i></h2>
+      <div id="articles"></div>
+      <div id="notes"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
