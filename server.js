@@ -89,9 +89,6 @@ app.get("/scrape", function(req, res) {
                     console.log(doc);
                 }
             });
-
-
-
         });
     });
     //Sends "Scrape Complete" message to the browser
