@@ -22,7 +22,7 @@ var app = express();
 app.use(bodyParser.urlencoded({
     extended: false
 }));
-
+app.set('port', (process.env.PORT || 3000));
 // Make public a static dir
 app.use(express.static("public"));
 
@@ -153,6 +153,6 @@ app.post("/all/:id", function(req, res) {
 });
 
 // Listen on port 3000
-app.listen(3000, function() {
-    console.log("App running on port 3000!");
+app.listen(app.get('port'), function() {
+    console.log('Node app is running on port', app.get('port'));
 });
